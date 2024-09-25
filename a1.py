@@ -15,5 +15,7 @@ final = int(input("Enter grade for Final Exam: "))
 preparation = int(input("Enter grade for Midterms and Final Preparation: "))
 #doing the math
 grade = labs_completed/6*20 + quizzes_completed/6*15 + (assignment1+assignment2+assignment3+assignment4)/400*16 + (midterm1+midterm2)/200*25 + final/100*18 + preparation/100*6
+grade = round(grade)
+grade = int(grade)
 #printing
 print("Your grade is:",grade)
